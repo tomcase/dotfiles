@@ -1,5 +1,16 @@
 require('plugins')
 
+vim.cmd [[
+  syntax enable
+]]
+
+local set = vim.opt
+set.tabstop=2
+set.shiftwidth = 2
+set.softtabstop = 2
+set.expandtab = true
+set.number = true
+
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
