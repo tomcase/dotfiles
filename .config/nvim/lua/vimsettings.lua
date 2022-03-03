@@ -43,3 +43,4 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
+vim.g.closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.tsx'
