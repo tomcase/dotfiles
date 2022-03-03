@@ -1,5 +1,6 @@
 vim.cmd [[
   syntax enable
+  colorscheme gruvbox
 ]]
 
 local set = vim.opt
@@ -8,6 +9,8 @@ set.shiftwidth = 2
 set.softtabstop = 2
 set.expandtab = true
 set.number = true
+set.termguicolors=true
+set.completeopt={'menu','menuone','noselect'}
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -39,3 +42,4 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
+
