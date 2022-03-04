@@ -11,6 +11,7 @@ set.expandtab = true
 set.number = true
 set.termguicolors=true
 set.completeopt={'menu','menuone','noselect'}
+set.signcolumn="yes"
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
